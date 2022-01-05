@@ -113,7 +113,7 @@ def getFeatures(gdf):
     return [json.loads(gdf.to_json())['features'][0]['geometry']]
 
 
-# This is to use clip a raster to the extent of the flood map shapefile
+# This is used to clip a raster to the extent of the flood map shapefile
 # that is assumed to be at the extent the user wants.
 # It is also assumed that the input_shapefile already had gpd.read_file(input_shapefile) executed
 def ras2shp_extent(input_rasterfile, input_shapefile, output_rasterfile):

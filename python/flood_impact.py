@@ -96,7 +96,7 @@ flood_map
 new_crs = flood_map.crs'''
 #####################################################################################################
 
-# ### Force the CRS to be the same as the metric data (this case ESPG:4236)
+# ### Force the CRS to be the same as the metric data (this case ESPG:4326)
 
 # Since the data we have is in ESPG: 4326, force the shapefile to be same projection if not already there
 if flood_map.crs == "EPSG:4326":
